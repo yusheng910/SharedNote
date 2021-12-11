@@ -1,0 +1,7 @@
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-awesome-pages-plugin
+mkdocs-minify-plugin
+mkdocs-localsearch
+pymdown-extensions

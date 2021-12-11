@@ -1,0 +1,156 @@
+# Project information
+site_name: Shared Note
+site_description: 📘 Yu-Sheng's learning notes, proudly built with MkDocs and GitHub Actions.
+site_author: Yu-Sheng
+site_url: https://yusheng910.github.io/SharedNote
+
+# Repository
+repo_name: yusheng910/SharedNote
+repo_url: https://github.com/yusheng910/SharedNote
+edit_uri: edit/docs/docs/
+
+# Copyright
+copyright: Copyright &copy; 2021 Yu-Sheng
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include Mkdocs JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  language: zh-Hant
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+  palette:
+    # Light mode
+    - scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: cyan
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon:
+    repo: fontawesome/brands/github-square
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+# Contents
+nav:
+  - 首頁: index.md
+  - 程式語言:
+      - C#: programming-languages/csharp.md
+      - JavaScript: programming-languages/javascript.md
+      - Python: programming-languages/python.md
+  - 設計模式:
+      - 概述: design-patterns/overview.md
+  - 課程筆記:
+      - WinForm:
+          - 01. 第一天: winform/lecture-01.md
+          - 02. 第二天: winform/lecture-02.md
+      - .Net MVC:
+          - 01. 第一天: dotnet-mvc/lecture-01.md
+          - 02. 第二天: dotnet-mvc/lecture-02.md
+      - .Net Core:
+          - 01. 第一天: dotnet-core/lecture-01.md
+          - 02. 第二天: dotnet-core/lecture-02.md
+  - 範例頁面:
+      - 程式區塊: examples/code-blocks.md
+      - 標籤頁面: examples/tabs.md
+      - 警示區塊: examples/admonitions.md
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg # Extras
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yusheng910
+
+extra_javascript:
+  # MathJax
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - extra/js/config.js
+  # Tables
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - extra/js/tables.js
+  # Han
+  #- https://cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js
+
+extra_css:
+  - extra/css/home.css
+  #- https://cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
