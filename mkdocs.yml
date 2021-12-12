@@ -92,6 +92,7 @@ nav:
       - .Net Core:
           - 01. 第一天: dotnet-core/lecture-01.md
           - 02. 第二天: dotnet-core/lecture-02.md
+          - 03. 第二天: dotnet-core/lecture-03.md
   - 範例頁面:
       - 程式區塊: examples/code-blocks.md
       - 標籤頁面: examples/tabs.md

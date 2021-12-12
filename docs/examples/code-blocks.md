@@ -16,7 +16,7 @@ namespace HelloWorld {
 
 ## 添加行數
 
-``` py linenums="1"
+``` py linenums="5"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -46,6 +46,8 @@ def bubble_sort(items):
 
 ``` python
 print("Hello World") # (1)
+print("Hello World") # (2)
 ```
 
 1.  :man_raising_hand: 這是簡單的一個 `print()` 陳述式
+2.  TEST
