@@ -89,6 +89,7 @@ nav:
       - .Net MVC:
           - 01. 第一天: dotnet-mvc/lecture-01.md
           - 02. 第二天: dotnet-mvc/lecture-02.md
+          - 02. 第三天: dotnet-mvc/lecture-03.md
       - .Net Core:
           - 01. 第一天: dotnet-core/lecture-01.md
           - 02. 第二天: dotnet-core/lecture-02.md
